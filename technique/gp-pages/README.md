@@ -75,7 +75,7 @@ fork[代码](https://github.com/wxtsky/MyWalletScan)，链接是作者链接，�
 ![image-20230523002432420](./images/image-20230523002432420.png)
 ![image-20230523002448665](./images/image-20230523002448665.png)
 
-这个时候会自动部署。部署会出现`Error: The deploy step encountered an error: The process '/usr/bin/git' failed with exit code 128 ❌`错误。
+这个时候会自动部署。部署会出现`Error: The deploy step encountered an error: The process '/usr/bin/git' failed with exit code 128 ❌`错误。这里是因为权限问题所以无法通过，根据下一小节任务配置权限后重跑job即可。
 
 ![image-20230523004055408](./images/image-20230523004055408.png)
 
