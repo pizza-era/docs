@@ -1,7 +1,7 @@
 # 钱包一览表
 
 ::: tip
-如果在使用此文档期间出现其他问题，可以在[twitter](https://twitter.com/rnmumu3)留言，笔者尽力实时响应。
+如果在使用此文档期间出现其他问题，可以在[twitter](https://twitter.com/Mo_Wmusk)留言，笔者尽力实时响应。
 :::
 
 ## fork代码
