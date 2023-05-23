@@ -4,9 +4,9 @@
 如果在使用此文档期间出现其他问题，可以在[twitter](https://twitter.com/Mo_Wmusk)留言，笔者尽力实时响应。
 :::
 
-## fork代码
+## fork 代码
 
-创建github账户，本期先不在讲如何创建账户，后续会有其他文章专门介绍。
+创建 github 账户，本期先不在讲如何创建账户，后续会有其他文章专门介绍。
 fork[代码](https://github.com/wxtsky/MyWalletScan)，链接是作者链接，大家可以关注下[Github](https://github.com/wxtsky/MyWalletScan)和[twitter](https://twitter.com/jingluo0)。
 
 ::: tip
@@ -29,36 +29,36 @@ fork[代码](https://github.com/wxtsky/MyWalletScan)，链接是作者链接，�
 
 ![image-20230523000903792](./images/image-20230523000903792.png)
 
-将下面代码粘贴，注意这里` echo "www.xxxxxxx.github.io" >> ./dist/CNAME `改成自己网站，例如这里笔者就要改成`www.pizza-era.github.io`。
+将下面代码粘贴，注意这里`echo "www.xxxxxxx.github.io" >> ./dist/CNAME`改成自己网站，例如这里笔者就要改成`www.pizza-era.github.io`。
 
 ```shell
  name: Deploy to GitHub Pages
-   
+
    on:
      push:
        branches:
          - main # 或其他您希望触发 CI 的分支
-   
+
    jobs:
      build-and-deploy:
        runs-on: ubuntu-latest
-   
+
        steps:
          - name: Checkout repository
            uses: actions/checkout@v2
-   
+
          - name: Setup Node.js
            uses: actions/setup-node@v2
            with:
              node-version: '18' # 或其他您希望使用的 Node.js 版本
-   
+
          - name: Run Export
            run: |
              export TZ='Asia/Shanghai'
              npm install
              npm run build
              echo "www.xxxxxxx.github.io" >> ./dist/CNAME    # 自己预期的网站
-   
+
          - name: Deploy to GitHub Pages
            uses: JamesIves/github-pages-deploy-action@4.1.0
            with:
@@ -70,7 +70,7 @@ fork[代码](https://github.com/wxtsky/MyWalletScan)，链接是作者链接，�
 
 ![image-20230523000955516](./images/image-20230523000955516.png)
 
-点击commit。
+点击 commit。
 
 ![image-20230523002432420](./images/image-20230523002432420.png)
 ![image-20230523002448665](./images/image-20230523002448665.png)
@@ -89,7 +89,7 @@ fork[代码](https://github.com/wxtsky/MyWalletScan)，链接是作者链接，�
 
 ![image-20230523002616424](./images/image-20230523002616424.png)
 
-## 重跑job
+## 重跑 job
 
 回到`action`点击部署，这里`Create main.yml`可以点击进去。
 
@@ -99,7 +99,7 @@ fork[代码](https://github.com/wxtsky/MyWalletScan)，链接是作者链接，�
 
 ![image-20230523003739341](./images/image-20230523004154424.png)
 
-job如图所示运营成功。
+job 如图所示运营成功。
 
 ![image-20230523003739341](./images/image-20230523003034123.png)
 
