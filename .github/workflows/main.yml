@@ -22,7 +22,7 @@ jobs:
             - name: Run Export
               run: |
                   export TZ='Asia/Shanghai'
-                  npm install
+                  npm i --force
                   npm run build
                   echo "www.pizza-era.github.io" >> .vuepress/dist/CNAME
 
