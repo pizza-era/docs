@@ -2,4 +2,4 @@
 
 ## 文章链接
 
-* [钱包一览表](./technique/gp-pages/)
+* [钱包一览表](./technique/gp-pages)
